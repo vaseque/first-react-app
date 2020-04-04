@@ -9,44 +9,44 @@ import ReactHtmlParser from 'react-html-parser';
 
 class List extends React.Component {
 
-    static propTypes = {
-        title: PropTypes.node.isRequired,
-        image: PropTypes.string,
-        description: PropTypes.node,
-        columns: PropTypes.array,
-    }
+  static propTypes = {
+    title: PropTypes.node.isRequired,
+    image: PropTypes.string,
+    description: PropTypes.node,
+    columns: PropTypes.array,
+  }
 
-    static defaultProps = {
-        description: settings.defaultListDescription,
-    }
+  static defaultProps = {
+    description: settings.defaultListDescription,
+  }
 
-    render() {
+  render() {
 
-        const { title, image, description, columns } = this.props;
+    const { title, image, description, columns } = this.props;
 
-        return (
+    return (
 
-            <section className={styles.component}>
-                <Hero
-                    titleText={title}
-                    imageImg={image}
-                />
-                <div className={styles.description}>
-                    {ReactHtmlParser(description)}
-                </div>
-                <div className={styles.columns}>
-                    {columns.map(columnData => (
-                        <Column key={columnData.id} {...columnData} />
-                    ))}
-                </div>
-                {/* <div className={styles.creator}>
+      <section className={styles.component}>
+        <Hero
+          titleText={title}
+          imageImg={image}
+        />
+        <div className={styles.description}>
+          {ReactHtmlParser(description)}
+        </div>
+        <div className={styles.columns}>
+          {columns.map(columnData => (
+            <Column key={columnData.id} {...columnData} />
+          ))}
+        </div>
+        {/* <div className={styles.creator}>
                     <Creator text={settings.columnCreatorText}
                         action={title => this.addColumn(title)}
                     />
                 </div> */}
-            </section>
-        );
-    }
+      </section>
+    );
+  }
 }
 
 export default List;
