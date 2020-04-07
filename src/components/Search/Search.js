@@ -48,8 +48,9 @@ class Search extends React.Component {
 
     return (
 
-      <Container>
-        <div className={styles.component}>
+      
+      <div className={styles.component}>
+        <Container>
           <input
             type='text'
             placeholder={text}
@@ -62,8 +63,8 @@ class Search extends React.Component {
           <div>
             { countVisible == countAll ? '' : `${countVisible} / ${countAll}` }
           </div>
-        </div>
-      </Container>
+        </Container>
+      </div>
     );
   }
 }

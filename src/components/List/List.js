@@ -28,8 +28,9 @@ class List extends React.Component {
 
     return (
 
-      <Container>
-        <section className={styles.component}>
+      
+      <section className={styles.component}>
+        <Container>
           <Hero
             titleText={title}
             imageImg={image}
@@ -47,8 +48,8 @@ class List extends React.Component {
               action={addColumn}
             />
           </div>
-        </section>
-      </Container>
+        </Container>
+      </section> 
     );
   }
 }

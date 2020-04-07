@@ -6,14 +6,16 @@ import MainLayout from '../MainLayout/MainLayout.js';
 
 const App = () => (
   
-  <MainLayout>
-    <BrowserRouter>
+  
+  <BrowserRouter>
+    <MainLayout>
       <Switch>
         <Route exact path='/' component={Home} />
         <Route exact path='/info' component={Info} />
       </Switch>
-    </BrowserRouter>
-  </MainLayout>
+    </MainLayout>
+  </BrowserRouter>
+  
 );
 
 export default App;

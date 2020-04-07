@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import Home from './Home';
+import Home from './Home.js';
 import { createAction_moveCard } from '../../redux/cardsRedux';
 
 const mapStateToProps = state => ({

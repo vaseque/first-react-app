@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import List from '../List/ListContainer.js';
 import Search from '../Search/SearchContainer.js';
 import {DragDropContext} from 'react-beautiful-dnd';
-// import Header from '../Header/Header';
 
 class Home extends React.Component {
 
@@ -47,7 +46,6 @@ class Home extends React.Component {
     return (
 
       <main className={styles.component}>
-        {/* <Header /> */}
         <h1 className={styles.title}>{title}</h1>
         <h2 className={styles.subtitle}>{subtitle}</h2>
         <Search />
