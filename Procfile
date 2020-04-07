@@ -1,1 +1,1 @@
-web: node package.json server
+web: node server
