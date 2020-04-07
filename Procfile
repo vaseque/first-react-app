@@ -1,1 +1,1 @@
-web: node http-server dist
+web: package.json server
