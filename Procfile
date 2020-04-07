@@ -1,1 +1,1 @@
-web: server-http
+web: node server
