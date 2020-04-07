@@ -82,6 +82,18 @@ const lists = [
     description: 'Interesting things I want to check out!',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
+  {
+    id: 'list-2',
+    title: 'Things not to do <sup>ever!</sup>',
+    description: 'There are things I will never do!',
+    image: 'https://images.pexels.com/photos/3858142/pexels-photo-3858142.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+  },
+  {
+    id: 'list-3',
+    title: 'Images to snap <sup>always!</sup>',
+    description: 'Resplendent imagery evoking those little moments!',
+    image: 'https://images.pexels.com/photos/3551762/pexels-photo-3551762.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+  },
 ];
 
 const columns = [
