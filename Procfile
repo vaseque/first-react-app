@@ -1,1 +1,1 @@
-web: node server
+web: node http-server dist
