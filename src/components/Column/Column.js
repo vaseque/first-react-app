@@ -45,7 +45,6 @@ class Column extends React.Component {
                 {cards.map(cardData => (
                   <Card key={cardData.id} {...cardData} />
                 ))}
-
                 {provided.placeholder}
               </div>
             )}
