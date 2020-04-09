@@ -11,7 +11,7 @@ const SearchResults = ({ cards }) => (
       <div>   
         {cards.map(cardData => (
           <Card key={cardData.id} {...cardData} />
-        ))}         
+        ))}    
       </div>
     </Container>
   </section >

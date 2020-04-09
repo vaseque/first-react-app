@@ -23,7 +23,7 @@ class Search extends React.Component {
   }
 
   state = {
-    value: this.props.searchString,
+    value: this.props.searchString || '',
   }
 
   handleChange(event){
@@ -34,7 +34,6 @@ class Search extends React.Component {
   }
 
   handleOK(){
-    //this.props.changeSearchString(this.state.value);
     this.props.history.push(`/search/${this.state.value}`);
   }
 
